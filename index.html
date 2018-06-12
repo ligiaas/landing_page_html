@@ -20,10 +20,14 @@
 	<nav class="navbar navbar-fixed-top" role="navigation" id="mainNav">
 		<div class="container">
 			<div class="navbar-header">
-				<button type="button" data-toggle="collapse" data-target="#navbar-collapse-1" class="navbar-toggle">
+				<a href="#" class="a_style navbar-brand">
+					<img class="logo" src="img/logo.png" alt="Capture">
+					<p class="navbar-brand-text">Capture</p>
+				</a>
+				
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
 					<i class="fa fa-bars"></i>
 				</button>
-				<a href="#" class="a_style navbar-brand"><img class="logo" src="img/logo.png" alt="Capture"><p class="navbar-brand-text">Capture</p></a>
 			</div>
 			<div class="collapse navbar-collapse navbar-left" id="navbar-collapse-1">
 				<ul class="nav navbar-nav list-inline">
@@ -32,17 +36,19 @@
 					<li class="list-inline-item"><a href="#">Testimonials</a></li>
 				</ul>
 			</div>
-			<ul class="nav navbar-nav navbar-right list-inline">
-				<li class="list-inline-item">
-					<p class="navbar-text"><a href="facebook.com" class="navbar-link"></a></p>
-				</li>
-				<li class="list-inline-item">
-					<p class="navbar-text"><a href="twitter.com" class="navbar-link"></a></p>
-				</li>
-				<li class="list-inline-item">
-					<p class="navbar-text"><a href="googleplus.com" class="navbar-link"></a></p>
-				</li>
-			</ul> 
+			<div class="navbar navbar-right">
+				<ul class="nav navbar-nav list-inline social-buttons" id="nav-inline">
+					<li class="list-inline-item">
+						<a href="https://www.facebook.com/" class="navbar-link"><i class="fa fa-facebook i-style"></i></a>
+					</li>
+					<li class="list-inline-item">
+						<a href="https://twitter.com/" class="navbar-link"><i class="fa fa-twitter i-style"></i></a>
+					</li>
+					<li class="list-inline-item">
+						<a href="https://plus.google.com/" class="navbar-link"><i class="fa fa-google-plus i-style"></i></a>
+					</li>
+				</ul>
+			</div> 
 		</div>
 	</nav>
 	
@@ -50,7 +56,10 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Slabo+27px" rel="stylesheet">
 	<!-- Font Awesome -->
 	<script src="https://use.fontawesome.com/782634f8bc.js"></script>
-	<!-- Latest compiled and minified JavaScript -->
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>
