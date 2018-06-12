@@ -1,16 +1,56 @@
 body {
 	font-family: "Open Sans", sans-serif;
 }
-
-/*** navbar toggle ***/
-
 /*** navbar ***/
-#mainNav {
-	padding: 13px;
-}
 .navbar {
 	background-color: #43b97b;
 }
+
+/*** toggle ***/
+.navbar-toggle {
+	top: 3px;
+	border: 1px solid #fff;
+	padding: 5px 10px;
+}
+.fa-bars {
+	color: #fff;
+}
+/*** header ***/
+.navbar-header {
+    margin-left: -15px !important;
+    display: block;
+}
+.navbar-brand {
+	font-size: inherit;
+	float: none;
+	position: relative;
+	top: 6px;
+}
+.navbar-brand > img {
+	display: inline-block;
+}
+.logo {
+	max-width: 66px;
+	height: auto;
+	float: none;
+}
+.navbar-brand-text {
+  font-size: 20px;
+  font-family: "Slabo 27px", serif;
+  color: rgb(255, 255, 255);
+  line-height: 1.6;
+  margin-left: 15px;
+  text-align: left;
+  display: inline;
+  position: relative;
+  top: 4px;
+}
+.navbar-brand-text:hover {
+	text-decoration: none;
+	color: #fff;
+}
+
+/*** list ***/
 a {
 	text-decoration: none;
 	color: #fff;
@@ -20,42 +60,8 @@ a {
 	text-decoration: none;
 	background-color: #eee0;
 }
-
-.navbar-toggle {
-	top: 3px;
-	border: 1px solid #fff;
-	padding: 5px 10px;
-}
-.fa-bars {
-	color: #fff;
-}
 #nav-inline {
 	display: -webkit-box;
-}
-.navbar-brand {
-	font-size: inherit;
-	float: none;
-}
-.navbar-brand > img {
-	display: inline-block;
-}
-.logo {
-	max-width: 66px;
-	height: auto;
-	float: none;
-	padding: 15px;
-}
-.navbar-brand-text {
-  font-size: 20px;
-  font-family: "Slabo 27px", serif;
-  color: rgb(255, 255, 255);
-  line-height: 1.6;
-  text-align: left;
-  display: inline;
-}
-.navbar-brand-text:hover {
-	text-decoration: none;
-	color: #fff;
 }
 .list-inline {
 	list-style: none;
@@ -64,10 +70,14 @@ a {
 	font-size: 18px;
 	display: inline-block;
 }
-.list-inline-item:not(:last-child) {
-	margin-right: .5rem;
+.list-inline-item:last-child {
+	padding-right: 0;
+	margin-right: 0;
 }
-ul.social-buttons > li > a.navbar-link {
+.navbar-right {
+	display: none;
+}
+ul.social-buttons > li > a.navbar-social {
 	font-size: 20px;
 	font-weight: bold;
 	width: 40px;
@@ -83,6 +93,32 @@ ul.social-buttons > li > a.navbar-link {
     left: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
+}
+
+@media (min-width: 768px) {
+	.navbar-header {
+	    margin-left: -15px !important;
+	    display: inline-block;
+	    position: absolute;
+	    top: 50%;
+	    transform: translateY(-50%);
+	}
+	.navbar-brand {
+		top: 0;
+	}
+	.navbar-nav > li > a {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	.navbar-menu {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+	}
+	.navbar-right {
+		display: block;
+	}
 }
 
 @media (min-width: 992px) {
