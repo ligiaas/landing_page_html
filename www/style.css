@@ -3,11 +3,13 @@ body {
 	font-family: "Open Sans", sans-serif;
 	background-color: #faf9f9;
 }
+a, a:hover, a:active {
+	text-decoration: none;
+	color: #333;
+}
 /*** navbar ***/
 #mainNav {
 	padding-bottom: 4px;
-}
-.navbar {
 	background-color: #43b97b;
 }
 
@@ -22,7 +24,6 @@ body {
 }
 /*** header ***/
 .navbar-header {
-    margin-left: -15px !important;
     display: block;
 }
 .navbar-brand {
@@ -56,14 +57,13 @@ body {
 }
 
 /*** list ***/
-a {
-	text-decoration: none;
+.nav > li > a {
 	color: #fff;
 }
-.nav > li > a:focus, .nav > li > a:hover {
-	color: #fff;
-	text-decoration: none;
-	background-color: #eee0;
+.nav > li > a:hover {
+	text-decoration: underline;
+	background-color: transparent;
+	transition: all 2s;
 }
 #nav-inline {
 	display: -webkit-box;
@@ -81,6 +81,7 @@ a {
 }
 .navbar-right {
 	display: none;
+	margin-right: 0;
 }
 ul.social-buttons > li > a.navbar-social {
 	font-size: 20px;
@@ -102,7 +103,6 @@ ul.social-buttons > li > a.navbar-social {
 
 @media (min-width: 768px) {
 	.navbar-header {
-	    margin-left: -15px !important;
 	    display: inline-block;
 	    position: absolute;
 	    top: 50%;
@@ -242,7 +242,7 @@ header {
 		font-size: 18px;
 		line-height: 1.8;
 	}
-	.text-mg {
+	.txt-mg-30 {
 		margin: 30px 0;
 	}
 	.btn {
@@ -276,44 +276,67 @@ header {
 	}
 }
 
-/*** Features ***/
-#features {
+/*** Featured ***/
+#featured {
   background-color: rgb(243, 243, 243);
   padding-top: 40px;
   padding-bottom: 30px;
 }
 
-#features img {
+#featured img {
 	display: block;
 	margin: auto;
 	padding: 10px;
 }
 
-#features .col-sm-6 {
+#featured .col-sm-6 {
 	height: 65px;
 }
 
 /*** About ***/
 #about {
-	margin-top: 100px;
+	margin: 100px 0;
 }
-#about img {
-	display: block;
-	margin: auto;
-}
-.topic {
+.content-topic {
 	padding-top: 20px;
 }
-.about-topic {
-	display: inline;
-	margin-left: 15px;
-}
-table tr {
-	margin-bottom: 10px;
-}
-table p {
+#about img {
 	margin: 0;
 }
-.icon-cnt {
+.fav-sty {
+	text-align: center;
+	width: 30px;
+	height: auto;
+	margin-right: 15px;
+}
+.content-bottom {
+	margin-top: 30px;
+}
+
+@media (min-width: 768px) {
+	#about img {
+		display: block;
+		margin: auto;
+	}
+}
+
+/*** Features ***/
+#features {
+	background-color: #43b97b;
+	padding: 80px 0;
+}
+.feat-card {
+	margin-top: 40px;
+}
+.sub-title {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+#features p, #features h3, #features i {
+	color: #fff;
+}
+#features i {
+	font-size: 40px;
+	display: block;
 	text-align: center;
 }
