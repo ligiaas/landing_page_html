@@ -1,6 +1,7 @@
 body {
 	margin-top: 50px;
 	font-family: "Open Sans", sans-serif;
+	background-color: #faf9f9;
 }
 /*** navbar ***/
 #mainNav {
@@ -92,7 +93,7 @@ ul.social-buttons > li > a.navbar-social {
 	color: #43b97b;
 	border-radius: 100%;
 }
-.navbar-icon {
+.fav-icon {
 	top: 50%;
     left: 50%;
     position: absolute;
@@ -142,7 +143,7 @@ ul.social-buttons > li > a.navbar-social {
 
 /*** header ***/
 header {
-	background-image: url(/assets/header.jpg);
+	background-image: url(assets/header_bg.jpg);
 	background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
@@ -157,7 +158,7 @@ header {
 	padding-right: 50px;
 	padding-bottom: 50px;
 }
-.header-title {
+.title {
 	font-size: 24px;
 	text-transform: uppercase;
 	font-weight: bolder;
@@ -165,7 +166,7 @@ header {
 	text-align: left;
 	letter-spacing: .2rem;
 }
-.header-text {
+.text {
 	font-size: 16px;
 	text-align: left;
 	color: rgb(110, 108, 108);
@@ -234,13 +235,15 @@ header {
     	padding-bottom: 200px;
     	padding-left: 60px;
 	}
-	.header-title {
+	.title {
 		font-size: 36px;
 	}
-	.header-text {
+	.text {
 		font-size: 18px;
-		margin: 30px 0;
 		line-height: 1.8;
+	}
+	.text-mg {
+		margin: 30px 0;
 	}
 	.btn {
 		margin-right: 15px;
@@ -264,32 +267,53 @@ header {
 	.btn-icon {
 		margin-right: 20px;
 	}
-
 }
+
 @media (min-width: 1200px) {
 	.header-content {
 		padding-top: 110px;
 		padding-right: 500px;
 	}
 }
-.Android_APP {
 
-  text-align: left;
-  position: absolute;
-  left: 587.937px;
-  top: 465px;
-  z-index: 100;
+/*** Features ***/
+#features {
+  background-color: rgb(243, 243, 243);
+  padding-top: 40px;
+  padding-bottom: 30px;
 }
-.Shape_17 {
-  border-style: solid;
-  border-width: 2px;
-  border-color: rgb(82, 82, 82);
-  border-radius: 2px;
-  background-color: transparent;
-  position: absolute;
-  left: 509px;
-  top: 447px;
-  width: 231px;
-  height: 64px;
-  z-index: 99;
+
+#features img {
+	display: block;
+	margin: auto;
+	padding: 10px;
+}
+
+#features .col-sm-6 {
+	height: 65px;
+}
+
+/*** About ***/
+#about {
+	margin-top: 100px;
+}
+#about img {
+	display: block;
+	margin: auto;
+}
+.topic {
+	padding-top: 20px;
+}
+.about-topic {
+	display: inline;
+	margin-left: 15px;
+}
+table tr {
+	margin-bottom: 10px;
+}
+table p {
+	margin: 0;
+}
+.icon-cnt {
+	text-align: center;
 }
