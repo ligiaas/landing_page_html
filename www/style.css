@@ -1,7 +1,12 @@
 body {
 	margin-top: 50px;
-	font-family: "Open Sans", sans-serif;
 	background-color: #faf9f9;
+}
+p {
+	font-family: "Open Sans", sans-serif;
+	color: rgb(110, 108, 108);
+	font-size: 16px;
+	line-height: 1.2;
 }
 a, a:hover, a:active {
 	text-decoration: none;
@@ -166,12 +171,6 @@ header {
 	text-align: left;
 	letter-spacing: .2rem;
 }
-.text {
-	font-size: 16px;
-	text-align: left;
-	color: rgb(110, 108, 108);
-	line-height: 1.2;
-}
 .btn {
 	margin-right: 15px;
 	margin-bottom: 15px;
@@ -238,7 +237,7 @@ header {
 	.title {
 		font-size: 36px;
 	}
-	.text {
+	p {
 		font-size: 18px;
 		line-height: 1.8;
 	}
@@ -323,7 +322,7 @@ header {
 /*** Features ***/
 #features {
 	background-color: #43b97b;
-	padding: 80px 0;
+	padding: 100px 0;
 }
 .feat-card {
 	margin-top: 40px;
@@ -339,4 +338,77 @@ header {
 	font-size: 40px;
 	display: block;
 	text-align: center;
+}
+
+/*** Testimonials ***/
+#testimonials {
+	height: 500px;
+	width: 100%;
+	padding: 100px 0;
+}
+/*** carousel ***/
+.carousel {
+    margin: 1em auto;
+    max-width: 800px;
+    position: relative;
+    overflow-x: auto;
+}
+.carousel__inner {
+	white-space: nowrap;
+    transition: transform 1s ease;
+}
+.carousel__item {
+    font-size: 1em;
+    display: inline-block;
+    background-color: #cecece;
+    width: 800px;
+}
+.testimonial-description {
+	padding: 0 50px;
+    background-color: #e9dfdd;
+}
+.carousel__btn {
+    bottom: 0;
+    top: 0;
+    width: 25px;
+    font-size: 1em;
+    font-weight: bold;
+    border: 1px solid red;
+    display: none;
+}
+.carousel__btn--prev{
+    left: 0;
+}
+.carousel__btn--next{
+    right: 0;
+}
+.carousel__paginacao{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 25px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.carousel__paginacao li{
+    list-style: none;
+    margin: 0 10px;
+    padding: 0;
+    display: inline-block;
+
+}
+.carousel__paginacao li:after{
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+    opacity: .8;    
+    box-shadow: 0 0 2px black;            
+}
+.carousel__paginacao li.atual:after{
+    opacity: 1;
+    background: #333;
 }
