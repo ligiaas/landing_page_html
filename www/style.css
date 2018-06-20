@@ -342,8 +342,10 @@ header {
 
 /*** Testimonials ***/
 #testimonials {
-	padding: 100px 0;
-	margin-bottom: 100px;
+	padding: 100px 0 150px 0;
+}
+.testimony {
+	margin-bottom: 20px;
 }
 .declarant {
 	color: rgb(75, 72, 72);
@@ -391,7 +393,6 @@ header {
 		transform: translate(-720%, 210%) !important;
 	}
 }
-
 @media (min-width: 1200px) {
 	.slick-prev {
 		transform: translate(886%, 210%) !important;
@@ -399,4 +400,10 @@ header {
 	.slick-next {
 		transform: translate(-886%, 210%) !important;
 	}
+}
+
+/*** Subscription ***/
+#subscription {
+	background-color: #43b97b;
+	padding: 100px 0;
 }
