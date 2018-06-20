@@ -342,73 +342,61 @@ header {
 
 /*** Testimonials ***/
 #testimonials {
-	height: 500px;
-	width: 100%;
 	padding: 100px 0;
+	margin-bottom: 100px;
 }
-/*** carousel ***/
-.carousel {
-    margin: 1em auto;
-    max-width: 800px;
-    position: relative;
-    overflow-x: auto;
+.declarant {
+	color: rgb(75, 72, 72);
+	text-transform: uppercase;
+	line-height: 1.25;
+	text-align: center;
 }
-.carousel__inner {
-	white-space: nowrap;
-    transition: transform 1s ease;
+.dec-occu {
+	font-size: 14px;
+	margin-top: -13px;
 }
-.carousel__item {
-    font-size: 1em;
-    display: inline-block;
-    background-color: #cecece;
-    width: 800px;
+/*** slick carousel ***/
+.slick-prev {
+	transform: translate(200%, 260%) !important;
 }
-.testimonial-description {
-	padding: 0 50px;
-    background-color: #e9dfdd;
+.slick-next {
+	transform: translate(-200%, 260%) !important;
 }
-.carousel__btn {
-    bottom: 0;
-    top: 0;
-    width: 25px;
-    font-size: 1em;
-    font-weight: bold;
-    border: 1px solid red;
-    display: none;
+.slick-prev, .slick-next {
+	width: 50px;
+	height: 50px;
 }
-.carousel__btn--prev{
-    left: 0;
-}
-.carousel__btn--next{
-    right: 0;
-}
-.carousel__paginacao{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 25px;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-.carousel__paginacao li{
-    list-style: none;
-    margin: 0 10px;
-    padding: 0;
-    display: inline-block;
-
-}
-.carousel__paginacao li:after{
-    content: '';
-    display: block;
-    width: 10px;
-    height: 10px;
-    background: white;
-    border-radius: 50%;
-    opacity: .8;    
-    box-shadow: 0 0 2px black;            
-}
-.carousel__paginacao li.atual:after{
+.slick-prev:before, .slick-next:before {
+    font-family: 'slick';
+    font-size: 50px;
+    line-height: 1;
     opacity: 1;
-    background: #333;
+    color: #e0dede;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+@media (min-width: 768px) {
+	.slick-prev {
+		transform: translate(666%, 146%) !important;
+	}
+	.slick-next {
+		transform: translate(-666%, 146%) !important;
+	}
+}
+@media (min-width: 992px) {
+	.slick-prev {
+		transform: translate(720%, 210%) !important;
+	}
+	.slick-next {
+		transform: translate(-720%, 210%) !important;
+	}
+}
+
+@media (min-width: 1200px) {
+	.slick-prev {
+		transform: translate(886%, 210%) !important;
+	}
+	.slick-next {
+		transform: translate(-886%, 210%) !important;
+	}
 }
