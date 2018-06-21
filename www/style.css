@@ -407,3 +407,81 @@ header {
 	background-color: #43b97b;
 	padding: 100px 0;
 }
+#subscription p {
+	color: #fff;
+	text-transform: capitalize;
+}
+#subscribe-form {
+	position: relative;
+}
+#subscribe-form input {
+	color: #43b97b;
+}
+#subscribe-form input::placeholder {
+	color: #43b97b;
+}
+#subscribe-form input::-webkit-input-placeholder {
+   color: #43b97b;
+}
+#subscribe-form input:-moz-placeholder { /* Firefox 18- */
+   color: #43b97b;  
+}
+#subscribe-form input::-moz-placeholder {  /* Firefox 19+ */
+   color: #43b97b;  
+}
+#subscribe-form input:-ms-input-placeholder {  
+   color: #43b97b;  
+}
+#subscribe-form > a > i {
+	position: absolute;
+	font-size: 30px;
+	top: 1px;
+	right: 4px;
+	z-index: 999;
+	color: #43b97b;
+}
+.form-sub, .form-control {
+	display: inline-block;
+	width: 100%;
+	vertical-align: middle;
+}
+.form-control {
+	border: 0;
+}
+.form-control:focus {
+	border-color: #43b97b;
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(67, 185, 123,.6);
+}
+
+/*** Footer ***/
+#footer {
+	padding: 50px 0;
+}
+#footer p {
+	font-size: 12px;
+	color: rgb(118, 114, 114);
+	line-height: 1.2;
+}
+#footer i {
+	color: #dddddd;
+	font-size: 30px;
+	padding: 15px 27px;
+}
+.ft-lt-icons {
+	list-style: none;
+	margin: 0;
+}
+.ft-lt-icons-item {
+	display: inline-block;
+	padding: 0 5px;
+}
+
+.©_2015_Pixelhint_com__All_Rights_Reserved {
+  font-size: 12px;
+  font-family: "OpenSans";
+  text-align: center;
+  position: absolute;
+  left: 616.937px;
+  top: 3294.792px;
+  z-index: 4;
+}
