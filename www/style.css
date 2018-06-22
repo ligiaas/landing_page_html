@@ -470,6 +470,8 @@ header {
 .ft-lt-icons {
 	list-style: none;
 	margin: 0;
+	text-align: center;
+	padding-left: 0;
 }
 .ft-lt-icons-item {
 	display: inline-block;
